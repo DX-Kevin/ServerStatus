@@ -10,9 +10,12 @@ PORT = 35601
 USER = "s01"
 PASSWORD = "USER_DEFAULT_PASSWORD"
 #
-CU = "cu.tz.cloudcpp.com"
-CT = "ct.tz.cloudcpp.com"
-CM = "cm.tz.cloudcpp.com"
+CU = "www.10086.cn"
+CT = "www.189.cn"
+CM = "www.10010.com"
+#CU = "cu.tz.cloudcpp.com"
+#CT = "ct.tz.cloudcpp.com"
+#CM = "cm.tz.cloudcpp.com"
 #
 PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
