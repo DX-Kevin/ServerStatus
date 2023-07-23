@@ -130,8 +130,9 @@ web-dir参数为上一步设置的网站根目录，务必修改成自己网站�
 `Centos/Redhat`: yum -y install python3-pip gcc python3-devel && pip3 install psutil      
 `Windows`: https://pypi.org/project/psutil/    
 ```
-2、vim client-psutil.py, 修改SERVER地址，username帐号， password密码       
-3、python3 client-psutil.py 运行即可。    
+2、vim client-psutil.py, 修改SERVER地址，username帐号， password密码 
+3、pip install psutil 安装依赖库 
+4、python client-psutil.py 运行即可。    
 
 服务器和客户端自行加入开机启动，或进程守护，或后台方式运行。 例如： nohup python3 client-linux.py &    
 
