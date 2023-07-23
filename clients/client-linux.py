@@ -4,22 +4,21 @@
 # 版本：1.0.6, 支持Python版本：2.7 to 3.10
 # 支持操作系统： Linux, OSX, FreeBSD, OpenBSD and NetBSD, both 32-bit and 64-bit architectures
 # 说明: 默认情况下修改server和user就可以了。丢包率监测方向可以自定义，例如：CU = "www.facebook.com"。
-
-
+#
 SERVER = "127.0.0.1"
-USER = "s01"
-
-
-PASSWORD = "USER_DEFAULT_PASSWORD"
 PORT = 35601
+USER = "s01"
+PASSWORD = "USER_DEFAULT_PASSWORD"
+#
 CU = "cu.tz.cloudcpp.com"
 CT = "ct.tz.cloudcpp.com"
 CM = "cm.tz.cloudcpp.com"
+#
 PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
 INTERVAL = 1
-
+#
 import socket
 import time
 import timeit
