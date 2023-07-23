@@ -3,10 +3,10 @@
 * ServerStatus中文版是一个酷炫高逼格的云探针、云监控、服务器云监控、多服务器探针~。
 * 在线演示：https://tz.cloudcpp.com    
 
-[![Python Support](https://img.shields.io/badge/python-3.6%2B%20-blue.svg)](https://github.com/cppla/ServerStatus)
-[![C++ Compiler](http://img.shields.io/badge/C++-GNU-blue.svg?style=flat&logo=cplusplus)](https://github.com/cppla/ServerStatus)
-[![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://github.com/cppla/ServerStatus)
-[![Version](https://img.shields.io/badge/Version-Build%201.0.9-red)](https://github.com/cppla/ServerStatus)
+[![Python Support](https://img.shields.io/badge/python-3.6%2B%20-blue.svg)](https://github.com/DX-Kevin/ServerStatus)
+[![C++ Compiler](http://img.shields.io/badge/C++-GNU-blue.svg?style=flat&logo=cplusplus)](https://github.com/DX-Kevin/ServerStatus)
+[![License](https://img.shields.io/badge/license-MIT-4EB1BA.svg?style=flat-square)](https://github.com/DX-Kevin/ServerStatus)
+[![Version](https://img.shields.io/badge/Version-Build%201.0.9-red)](https://github.com/DX-Kevin/ServerStatus)
 
 ![Latest Version](http://dl.cpp.la/Archive/serverstatus_1.0.9.png)
 
@@ -28,7 +28,7 @@
 
 `Docker`:     
 
-wget --no-check-certificate -qO ~/serverstatus-config.json https://raw.githubusercontent.com/cppla/ServerStatus/master/server/config.json && mkdir ~/serverstatus-monthtraffic    
+wget --no-check-certificate -qO ~/serverstatus-config.json https://raw.githubusercontent.com/DX-Kevin/ServerStatus/master/server/config.json && mkdir ~/serverstatus-monthtraffic    
 docker run -d --restart=always --name=serverstatus -v ~/serverstatus-config.json:/ServerStatus/server/config.json -v ~/serverstatus-monthtraffic:/usr/share/nginx/html/json -p 80:80 -p 35601:35601 cppla/serverstatus:latest     
 
 `Docker-compose(推荐)`: docker-compose up -d
@@ -36,12 +36,16 @@ docker run -d --restart=always --name=serverstatus -v ~/serverstatus-config.json
 
 【客户端】：
 ```bash
-wget --no-check-certificate -qO client-linux.py 'https://raw.githubusercontent.com/cppla/ServerStatus/master/clients/client-linux.py' && nohup python3 client-linux.py SERVER={$SERVER} USER={$USER} PASSWORD={$PASSWORD} >/dev/null 2>&1 &
+wget --no-check-certificate -qO client-linux.py 'https://raw.githubusercontent.com/DX-Kevin/ServerStatus/master/clients/client-linux.py' && nohup python3 client-linux.py SERVER={$SERVER} USER={$USER} PASSWORD={$PASSWORD} >/dev/null 2>&1 &
 
 eg:
-wget --no-check-certificate -qO client-linux.py 'https://raw.githubusercontent.com/cppla/ServerStatus/master/clients/client-linux.py' && nohup python3 client-linux.py SERVER=45.79.67.132 USER=s04  >/dev/null 2>&1 &
+wget --no-check-certificate -qO client-linux.py 'https://raw.githubusercontent.com/DX-Kevin/ServerStatus/master/clients/client-linux.py' && nohup python3 client-linux.py SERVER=45.79.67.132 USER=s04  >/dev/null 2>&1 &
 ```
 
+【一键使用脚本】：
+```bash
+wget -N --no-check-certificate https://raw.githubusercontent.com/DX-Kevin/ServerStatus/master/status.sh && chmod +x status.sh && bash status.sh c
+```
 # 手动安装教程：     
    
 **【服务端配置】**           
