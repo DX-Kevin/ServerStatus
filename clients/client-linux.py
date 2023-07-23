@@ -10,9 +10,9 @@ PORT = 35601
 USER = "s01"
 PASSWORD = "USER_DEFAULT_PASSWORD"
 #
+CM = "www.10010.com"    #联通
+CT = "www.189.cn"       #电信
 CU = "www.bj.10086.cn"  #移动
-CT = "www.189.cn"    #电信
-CM = "www.10010.com" #联通
 #CU = "cu.tz.cloudcpp.com"
 #CT = "ct.tz.cloudcpp.com"
 #CM = "cm.tz.cloudcpp.com"
