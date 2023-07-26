@@ -2,7 +2,7 @@
 # coding: utf-8
 # Update by : https://github.com/cppla/ServerStatus, Update date: 20220530
 # 依赖于psutil跨平台库
-# 版本：1.0.3, 支持Python版本：2.7 to 3.10
+# 版本：1.0.6, 支持Python版本：2.7 to 3.10
 # 支持操作系统： Linux, Windows, OSX, Sun Solaris, FreeBSD, OpenBSD and NetBSD, both 32-bit and 64-bit architectures
 # 说明: 默认情况下修改server和user就可以了。丢包率监测方向可以自定义，例如：CU = "www.facebook.com"。
 
