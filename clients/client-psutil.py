@@ -12,9 +12,13 @@ USER = "s01"
 
 PASSWORD = "USER_DEFAULT_PASSWORD"
 PORT = 35601
-CU = "cu.tz.cloudcpp.com"
-CT = "ct.tz.cloudcpp.com"
-CM = "cm.tz.cloudcpp.com"
+#
+CM = "www.10010.com"    #联通
+CT = "www.189.cn"       #电信
+CU = "www.bj.10086.cn"  #移动
+#CU = "cu.tz.cloudcpp.com"
+#CT = "ct.tz.cloudcpp.com"
+#CM = "cm.tz.cloudcpp.com"
 PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
 PING_PACKET_HISTORY_LEN = 100
