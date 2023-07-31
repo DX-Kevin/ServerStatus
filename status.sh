@@ -192,8 +192,8 @@ Set_server() {
 Set_server_http_port() {
   while true; do
     echo -e "请输入 $NAME 服务端中网站要设置的 域名/IP的端口[1-65535]（如果是域名的话，一般用 80 端口）"
-    read -erp "(默认: 8888):" server_http_port_s
-    [[ -z "$server_http_port_s" ]] && server_http_port_s="8888"
+    read -erp "(默认: 8088):" server_http_port_s
+    [[ -z "$server_http_port_s" ]] && server_http_port_s="8088"
     if [[ "$server_http_port_s" =~ ^[0-9]*$ ]]; then
       if [[ ${server_http_port_s} -ge 1 ]] && [[ ${server_http_port_s} -le 65535 ]]; then
         echo && echo "	================================================"
