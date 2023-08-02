@@ -2,7 +2,7 @@
 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:~/bin
 export PATH
 
-sh_ver="1.0.6"
+sh_ver="1.0.7"
 
 filepath=$(
   cd "$(dirname "$0")" || exit
