@@ -68,8 +68,13 @@ Download_Server_Status_server() {
   make
   [[ ! -e "sergate" ]] && echo -e "${Error} ServerStatus 服务端编译失败 !" && cd "${file_1}" && rm -rf "/tmp//ServerStatus-master" && exit 1
   cd "${file_1}" || exit 1
-  mkdir -p "${server_file}"
+  if [ -d "${file}" ];then
+  echo "ServerStatus安装目录已存在"
   rm -rf "${file}"
+  else
+  echo "ServerStatus安装目录不存在，进行首次安装"
+  fi
+  mkdir -p "${server_file}"
   mv "/tmp/ServerStatus-master/server" "${file}"
   mv "/tmp/ServerStatus-master/web" "${file}"
   mv "/tmp/ServerStatus-master/plugin" "${file}"
