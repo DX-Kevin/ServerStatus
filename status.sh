@@ -69,9 +69,9 @@ Download_Server_Status_server() {
   [[ ! -e "sergate" ]] && echo -e "${Error} ServerStatus 服务端编译失败 !" && cd "${file_1}" && rm -rf "/tmp//ServerStatus-master" && exit 1
   cd "${file_1}" || exit 1
   mkdir -p "${server_file}"
-  mv "/tmp/ServerStatus-master/server" "${file}"
-  mv "/tmp/ServerStatus-master/web" "${file}"
-  mv "/tmp/ServerStatus-master/plugin" "${file}"
+  mv -f "/tmp/ServerStatus-master/server" "${file}"
+  mv -f "/tmp/ServerStatus-master/web" "${file}"
+  mv -f "/tmp/ServerStatus-master/plugin" "${file}"
   rm -rf "/tmp/ServerStatus-master"
   if [[ ! -e "${server_file}/sergate" ]]; then
     echo -e "${Error} ServerStatus 服务端移动重命名失败 !"
