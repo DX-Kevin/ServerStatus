@@ -70,14 +70,16 @@ Download_Server_Status_server() {
   cd "${file_1}" || exit 1
   if [ -d "${file}" ];then
   echo "ServerStatus安装目录已存在"
-  rm -rf "${file}"
-  else
+  cp -r -f "/tmp/ServerStatus-master/server" "${file}"
+  cp -r -f "/tmp/ServerStatus-master/web" "${file}"
+  cp -r -f "/tmp/ServerStatus-master/plugin" "${file}"
+    else
   echo "ServerStatus安装目录不存在，进行首次安装"
-  fi
   mkdir -p "${server_file}"
   mv "/tmp/ServerStatus-master/server" "${file}"
   mv "/tmp/ServerStatus-master/web" "${file}"
   mv "/tmp/ServerStatus-master/plugin" "${file}"
+  fi
   rm -rf "/tmp/ServerStatus-master"
   if [[ ! -e "${server_file}/sergate" ]]; then
     echo -e "${Error} ServerStatus 服务端移动重命名失败 !"
