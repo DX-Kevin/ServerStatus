@@ -74,9 +74,9 @@ Download_Server_Status_server() {
   echo "ServerStatus正在进行首次安装"
   fi
   mkdir -p "${server_file}"
-  /usr/bin/mv -r "/tmp/ServerStatus-master/server" "${file}"
-  /usr/bin/mv -r "/tmp/ServerStatus-master/web" "${file}"
-  /usr/bin/mv -r "/tmp/ServerStatus-master/plugin" "${file}"
+  /usr/bin/mv -f "/tmp/ServerStatus-master/server" "${file}"
+  /usr/bin/mv -f "/tmp/ServerStatus-master/web" "${file}"
+  /usr/bin/mv -f "/tmp/ServerStatus-master/plugin" "${file}"
   rm -rf "/tmp/ServerStatus-master"
   if [[ ! -e "${server_file}/sergate" ]]; then
     echo -e "${Error} ServerStatus 服务端移动重命名失败 !"
