@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # coding: utf-8
 # Update by : https://github.com/DX-Kevin/ServerStatus/, Update date: 20230723
-# 版本：1.0.6, 支持Python版本：2.7 to 3.10
+# 版本：1.0.8, 支持Python版本：2.7 to 3.10
 # 支持操作系统： Linux, OSX, FreeBSD, OpenBSD and NetBSD, both 32-bit and 64-bit architectures
 # 说明: 默认情况下修改server和user就可以了。丢包率监测方向可以自定义，例如：CU = "www.facebook.com"。
 #
