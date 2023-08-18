@@ -15,6 +15,27 @@ function timeSince(date) {
 		return "几秒前.";
 }
 
+function getTime(){
+        //获取日期类对象
+        var date = new Date;
+        //利用get方法获取当前年、月、日、时、分、秒等信息，并拼接在一起。
+        //注意：这里的date.getMonth()得到的月份数是从0开始的，所以要+1。
+        var time = date.getFullYear()+ "年" + 
+                    (date.getMonth() + 1) + "月" +
+                    date.getDay() + "日" + 
+                    date.getHours() + "时" + 
+                    date.getMinutes() + "分" + 
+                    date.getSeconds() + "秒";
+        //根据ID获取对应的span标签类对象
+        var showTimeSpan = document.getElementById("showTime");
+        //innerHTML
+        //语法：HTMLElementObject.innerHTML = text
+        //作用：改变同一行的一对HTML标签中的值
+        showTimeSpan.innerHTML = time;
+    }
+    //setInterval，定时调用某个方法，第一个参数："方法名()"，第二个参数为毫秒数。
+    window.setInterval("getTime()", 1000);
+
 function bytesToSize(bytes, precision, si)
 {
 	var ret;
