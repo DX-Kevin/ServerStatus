@@ -6,16 +6,16 @@
 # 说明: 默认情况下修改server和user就可以了。丢包率监测方向可以自定义，例如：CU = "www.facebook.com"。
 #
 SERVER = "127.0.0.1"
-PORT = 35601
-USER = "s01"
-PASSWORD = "USER_DEFAULT_PASSWORD"
+PORT = 23401
+USER = "u01"
+PASSWORD = "USER_DEFAULT_PASSWORD01"
 #
-CU = "www.10010.com"    #联通
-CT = "www.189.cn"       #电信
-CM = "www.bj.10086.cn"  #移动
-#CU = "cu.tz.cloudcpp.com"
-#CT = "ct.tz.cloudcpp.com"
-#CM = "cm.tz.cloudcpp.com"
+#CU = "www.10010.com"    #联通
+#CT = "www.189.cn"       #电信
+#CM = "www.bj.10086.cn"  #移动
+CU = "cu.tz.dpip.top"    #联通
+CT = "ct.tz.dpip.top"    #电信
+CM = "cm.tz.dpip.top"    #移动
 #
 PROBEPORT = 80
 PROBE_PROTOCOL_PREFER = "ipv4"  # ipv4, ipv6
